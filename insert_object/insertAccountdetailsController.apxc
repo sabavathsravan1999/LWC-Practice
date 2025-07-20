@@ -1,0 +1,14 @@
+public with sharing class insertAccountdetailsController {
+
+    @AuraEnabled
+    public static Id insertAccountDetailActivity(Account account){
+    
+        if(account.Name!=null){
+            insert account;
+            return [Select Id from Account where Name=:account.Name].Id;
+        }
+    throw new AuraHandledException('Account name is required');
+
+    }
+   
+}
