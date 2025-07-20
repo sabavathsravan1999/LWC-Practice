@@ -1,4 +1,20 @@
 check out my linkedin for the result 
 here the post url: https://www.linkedin.com/posts/sabavath-sravan-87834a19b_learnandskilluptogether-salesforce-lwc-activity-7352687151240695808-k3Af?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAC7b4FwBgvP9Je3kJ7FWP7Hnh3vOafKkID0
 
-
+📦 The toast must be imported from:
+import { ShowToastEvent } from 'lightning/platformShowToastEvent';
+🔑 Key attributes:
+title → Title of the popup
+message → Description/message to the user
+variant → Controls the color/intent:
+   success (✅ green)
+   error (❌ red)
+   warning (⚠️ yellow/orange)
+   info (ℹ️ blue)
+mode → How long it stays on screen:
+   dismissable – disappears after a short time
+   pester – stays longer or until closed
+   sticky – stays until manually closed
+✅ Finally, use:
+this.dispatchEvent(new ShowToastEvent({...}));
+to show the toast notification!
