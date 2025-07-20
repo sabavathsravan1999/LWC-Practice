@@ -1,0 +1,17 @@
+Asked to write LWC code to insert employee object by following best practices
+
+in UI 3 FIELDS
+1. Account name input
+2. Email Inpurt
+3. phone number input
+4. save button
+as soos as click on save the data is saved
+
+I used imperative apex call @AuuraEnabled
+apexmethid(paramters)
+.then()
+.catch();
+in apepx calls-->for error i used throw new AuraHandledException('enter the Account name');
+
+to display action ->used Toast event
+import {ShowToastEvent} from 'lightning/platformShowToastEvent'; 
