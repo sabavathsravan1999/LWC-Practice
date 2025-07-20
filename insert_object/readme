@@ -1,7 +1,7 @@
 Asked to write LWC code to insert employee object by following best practices
 
 in UI 3 FIELDS
-1. Account name input
+1. Account name input (in object form)
 2. Email Inpurt
 3. phone number input
 4. save button
