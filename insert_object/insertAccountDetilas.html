@@ -1,0 +1,30 @@
+<template>
+    <div>
+        <lightning-card title="Insert to Account">
+            <lightning-input
+                label="Enter the Account Name"
+                name="Name"
+                value={account.Name}
+                onchange={onchangeHandler}>
+            </lightning-input>
+            <lightning-input
+                label="Enter the Email"
+                name="Email"
+                value={account.Email}
+                onchange={onchangeHandler}>
+            </lightning-input>
+            <lightning-input
+                label="Enter the Phone Number"
+                name="Phone"
+                value={account.Phone}
+                onchange={onchangeHandler}>
+            </lightning-input>
+            <lightning-button 
+                label="Save"
+                variant="brand"
+                onclick={onclickHandler}>
+            </lightning-button>
+        </lightning-card>
+     </div>
+    
+</template>
