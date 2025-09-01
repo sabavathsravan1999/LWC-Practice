@@ -1,0 +1,10 @@
+  <template>
+    <lightning-card title="Parent Component" >
+        <p class="msg">this the change value after clicking the button from child</p>
+        <p class="display_value"><b>{currentcount}</b></p>
+        <c-increasedecreasebuttons-child
+        onchangevalue={handleValueChange}>
+
+        </c-increasedecreasebuttons-child>
+    </lightning-card>
+</template>
