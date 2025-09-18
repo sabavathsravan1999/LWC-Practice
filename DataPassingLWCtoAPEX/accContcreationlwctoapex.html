@@ -1,0 +1,20 @@
+<template>
+    <lightning-input label="Account Name"
+    name="accountName"
+    value={accountName}
+    onchange={handlelonchange}>
+</lightning-input>
+<lightning-input label="Last Name"
+name="lastname"
+value={lastname}
+onchange={handlelonchange}>
+</lightning-input>
+<lightning-button label="Create"
+variant="brand"
+onclick={onclickHandle}>
+</lightning-button>
+<lightning-button label="Reset"
+variant="destructive"
+onclick={handlerest}>
+</lightning-button>
+</template>
