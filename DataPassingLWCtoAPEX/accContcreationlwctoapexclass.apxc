@@ -1,0 +1,24 @@
+public with sharing class accContcreationlwctoapexclass {
+
+    public class wrpperclass{
+        @AuraEnabled public Id accountId;
+        @AuraEnabled public Id contactId;
+        
+    }
+    @AuraEnabled
+    public static wrpperclass insertAccountContact(String accountName, String lastname){
+        wrpperclass wrapRes=new wrpperclass();
+        try {
+             Account acc=new Account(Name=accountName);
+            insert acc;
+            //Id id=[select Id from Account where Name = : accountName].Id;
+            Contact con=new Contact(LastName=lastname, AccountId=acc.Id);
+            insert con;
+            wrapRes.accountId=acc.Id;
+            wrapRes.contactId=con.Id;
+        } catch (Exception e) {
+            throw new AuraHandledException(e.getMessage());
+        }
+        return wrapRes;
+    }
+}
